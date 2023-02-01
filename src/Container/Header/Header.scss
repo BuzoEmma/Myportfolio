@@ -1,0 +1,240 @@
+.emoji {
+  width: 70px;
+  // padding: 1rem 0.5rem;
+}
+
+#home {
+  position: relative;
+  background: url("../../assets//bgIMG.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: cover;
+
+  .app__wrapper {
+    padding: 1rem;
+
+    .copywrite {
+      display: none;
+    }
+  }
+}
+
+.app__header {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+
+  flex-direction: row;
+
+  padding: 6rem 2rem 0;
+
+  @media screen and (min-width: 2000px) {
+    padding-top: 8rem;
+  }
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 400px) {
+    padding: 6rem 1rem 2rem;
+  }
+}
+
+.app__header-info {
+  flex: 0.65;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+
+  @media screen and (max-width: 2000px) {
+    width: 100%;
+    margin-right: 0rem;
+  }
+}
+
+.app__header-badge {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+
+  .badge-cmp {
+    padding: 1rem 2rem;
+    border: var(--white-color);
+    border-radius: 15px;
+    flex-direction: row;
+    width: auto;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    @media screen and (min-width: 1200px) {
+      padding: 1rem 4rem;
+
+      // margin-left: 1rem;
+    }
+  }
+
+  .tag-cmp {
+    padding: 0.7rem 2rem;
+    gap: 5px;
+    border: var(--white-color);
+    margin-top: 2rem;
+    border-radius: 15px;
+    flex-direction: row;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+
+    p {
+      text-transform: uppercase;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .tag-cmp {
+      margin-left: 3rem;
+    }
+  }
+}
+
+.app__header-circles {
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100%;
+  margin-left: 1rem;
+  margin-top: 2rem;
+
+  div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    background: var(--white-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 60%;
+      height: 60%;
+    }
+  }
+
+  div:nth-child(1) {
+    width: 100px;
+    height: 100px;
+  }
+  div:nth-child(2) {
+    margin: 1.75rem;
+    width: 150px;
+    height: 150px;
+  }
+  div:nth-child(3) {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+
+    div {
+      margin: 1rem;
+    }
+  }
+}
+
+.app__header-img {
+  flex: 1;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0rem 3rem;
+  }
+
+  .profile {
+    width: 100%;
+    object-fit: contain;
+    z-index: 1;
+    -webkit-box-shadow: -50px -46px 0px -30px rgba(0,0,0,0), inset 9px -44px 11px -17px rgba(115,115,115,0.58); 
+    box-shadow: -50px -46px 0px -30px rgba(182, 174, 174, 0);
+    @media screen and (max-width: 1200px) {
+      margin-top: 3rem;
+    }
+  }
+
+  .overlay-circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (max-width: 1200px) {
+      margin: -1rem 0;
+    }
+  }
+}
+
+.header__social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 1rem 1rem 0.2rem;
+  bottom: 0rem;
+  left: 0rem;
+  position: fixed;
+
+  div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    margin: 0.25rem 0;
+    border: 1px solid var(--lightGray-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      color: var(--gray-color);
+    }
+
+    &:hover {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+
+      svg {
+        color: var(--white-color);
+      }
+    }
+  }
+
+  @media screen and (min-width: 501px) {
+    display: none;
+  }
+}
