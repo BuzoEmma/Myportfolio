@@ -7,6 +7,11 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { HiX } from "react-icons/hi";
 
+const date = new Date()
+const year = date.getFullYear()
+
+
+
 const Footer = () => {
   const data = {
     name: "",
@@ -68,12 +73,7 @@ const Footer = () => {
               buzoemma@gmail.com
             </a>
           </div>
-          <div className="app__footer-card">
-            <img src={images.mobile} alt="mobile" />
-            <a href="tel: +2345678890" className="p-text">
-              tel: +2349056017716
-            </a>
-          </div>
+        
           <div className="app__footer-card">
             <img src={images.whatsapp} alt="mobile" />
 
@@ -133,7 +133,7 @@ const Footer = () => {
       }
 
       <div className="copyright">
-        <p className="p-text">@2020 Buzo</p>
+        <p className="p-text">@{year} Buzo</p>
         <p className="pitext">All right resevered</p>
       </div>
     </>
