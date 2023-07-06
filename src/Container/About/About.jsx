@@ -16,6 +16,19 @@ const About = () => {
 
   return (
     <>
+      <h3>
+        I am an instructor, teacher, adversary and conference speaker who has a
+        profile knowledge of front-end software development (Javascript,
+        Reactjs, Nextjs, HTML, CSS, etc). A certified Microsoft trainer with
+        exceptional knowledge of Ms Office, sound knowledge of blockchain
+        (Decentralisation)and a content creator with practical experience in the
+        industry. Currently, I'm an instructor in the area of Basic ICT
+        and programming with a renowned NGO (Meez Empowerment initiative).
+        Presently occupying the position of mentor in reactjs at
+        Techathon, an ICT syndicate and aspiring to greater
+        responsibility in other ICT-related areas.
+      </h3>
+      <br />
       <h2 className="head-text">
         I Know That <span>Good Experience</span>
         <br />
@@ -48,4 +61,4 @@ export default AppWrap1(
   MotionWrap(About, "app__about"),
   "About",
   "app__whitebg"
-)
+);

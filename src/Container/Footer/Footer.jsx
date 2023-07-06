@@ -27,7 +27,7 @@ const Footer = () => {
   const { name, email, message } = formData;
 
   const handleChangeInput = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
     setFormData({ ...formData, [name]: value });
   };
 
